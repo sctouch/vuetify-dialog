@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 shopt -s extglob  # to enable extglob
 PROJECT_NAME=$(node -p "require('./package.json').name")
 pid=$(cat ./build/related)

@@ -9,6 +9,7 @@ exports[`manager Test error notification with top-left position 1`] = `
   >
     <div
       class="v-snack__wrapper error"
+      role="alert"
     >
       <div
         class="v-snack__content"
@@ -36,6 +37,7 @@ exports[`manager Test info notification 1`] = `
   >
     <div
       class="v-snack__wrapper info"
+      role="alert"
     >
       <div
         class="v-snack__content"
@@ -63,6 +65,7 @@ exports[`manager Test success notification 1`] = `
   >
     <div
       class="v-snack__wrapper success"
+      role="alert"
     >
       <div
         class="v-snack__content"
@@ -91,6 +94,7 @@ exports[`manager Test warning notification with bottom-right position 1`] = `
   >
     <div
       class="v-snack__wrapper warning"
+      role="alert"
     >
       <div
         class="v-snack__content"

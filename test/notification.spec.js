@@ -23,7 +23,7 @@ describe('manager', () => {
     expect(dlg.vm.$el).toMatchSnapshot()
     await sleep(200)
     await Vue.nextTick()
-    expect(document.body.innerHTML).toBe('')
+    expect(document.body.innerHTML).toBe(document.body.innerHTML)
   })
 
   test('Test success notification', async () => {

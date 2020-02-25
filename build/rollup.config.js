@@ -1,5 +1,5 @@
-import vue from 'rollup-plugin-vue' // Обработка однофайловых компонентов .vue
-import buble from 'rollup-plugin-buble' // Транспиляция/Полифилизация для умеренной поддержки браузеров
+import vue from 'rollup-plugin-vue'
+import buble from 'rollup-plugin-buble'
 import commonjs from 'rollup-plugin-commonjs'
 import resolve from 'rollup-plugin-node-resolve'
 import css from 'rollup-plugin-css-porter'
@@ -10,7 +10,7 @@ import { terser } from 'rollup-plugin-terser'
 const argv = minimist(process.argv.slice(2))
 
 const config = {
-  input: 'src/index.js', // Путь до относительного package.json
+  input: 'src/index.js',
   output: {
     name: 'VuetifyDialog',
     exports: 'named',
@@ -20,11 +20,11 @@ const config = {
       'vuetify/lib': 'Vuetify'
     }
   },
-  external: [ 'vue', 'vuedl', 'vuetify/lib' ],
+  external: ['vue', 'vuedl', 'vuetify/lib'],
   plugins: [
     vue({
-      css: false, // Динамически внедряем CSS в тег <style>
-      compileTemplate: true // Явное преобразование шаблона в рендер-функцию
+      css: false,
+      compileTemplate: true
     }),
     css({ dest: 'dist/vuetify-dialog.css' }),
     resolve({
