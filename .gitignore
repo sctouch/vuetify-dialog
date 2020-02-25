@@ -6,3 +6,4 @@ build/related
 *.tgz
 package-lock.json
 .trash
+.idea
